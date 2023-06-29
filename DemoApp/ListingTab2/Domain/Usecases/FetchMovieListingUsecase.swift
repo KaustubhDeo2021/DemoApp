@@ -8,7 +8,7 @@
 import UIKit
 
 protocol FetchMovieListingProtocol {
-    func fetchMovieList(completion: @escaping (MovieResult) -> ())
+    func fetchMovieList(completion: @escaping (MovieResult?) -> ())
 }
 
 class FetchMovieListingUsecase: FetchMovieListingProtocol {
@@ -19,9 +19,9 @@ class FetchMovieListingUsecase: FetchMovieListingProtocol {
         self.networkManager = networkManager
     }
     
-    func fetchMovieList(completion: @escaping (MovieResult) -> ()) {
+    func fetchMovieList(completion: @escaping (MovieResult?) -> ()) {
         
-        self.networkManager?.getAPICall(urlString: Constant.movieUrl) {(result: MovieResult) in
+        self.networkManager?.getAPICall(urlString: Constant.movieUrl) {(result: MovieResult?) in
             
             completion(result)
         }

@@ -17,11 +17,11 @@ final class CollectionViewModelTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
  
-    // MARK: - testfetchMovieListing
-    func testfetchMovieListing() throws {
+    // MARK: - testfetchMovieListingSuccess
+    func testfetchMovieListingSuccess() throws {
         
        // Given
-       let fetchMovieListingUsecaseMock = FetchMovieListingUsecaseMock()
+        let fetchMovieListingUsecaseMock = FetchMovieListingUsecaseMock(result: true)
        let collectionViewModel = CollectionViewModel(fetchMovieListingUsecase: fetchMovieListingUsecaseMock)
     
         // When
@@ -29,6 +29,22 @@ final class CollectionViewModelTests: XCTestCase {
             
             // Then
             XCTAssertNotNil(result)
+        }
+    }
+    
+    
+    // MARK: - testfetchMovieListingFailure
+    func testfetchMovieListingFailure() throws {
+        
+       // Given
+        let fetchMovieListingUsecaseMock = FetchMovieListingUsecaseMock(result: false)
+       let collectionViewModel = CollectionViewModel(fetchMovieListingUsecase: fetchMovieListingUsecaseMock)
+    
+        // When
+        collectionViewModel.fetchMovieListing { result in
+            
+            // Then
+            XCTAssertNil(result)
         }
     }
 }

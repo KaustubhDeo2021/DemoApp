@@ -15,7 +15,7 @@ class ListingViewModel: NSObject {
         self.fetchMovieListingUsecase = fetchMovieListingUsecase
     }
     
-    func fetchMovieListing(completion: @escaping (MovieResult) -> ()) {
+    func fetchMovieListing(completion: @escaping (MovieResult?) -> ()) {
         
         fetchMovieListingUsecase?.fetchMovieList(completion: { result in
             completion(result)

@@ -18,10 +18,10 @@ final class ListingViewModelTests: XCTestCase {
     }
 
     // MARK: - testFetchMovieListing
-    func testFetchMovieListing() throws {
+    func testFetchMovieListingSuccess() throws {
        
        // Given
-       let fetchMovieListingUsecaseMock = FetchMovieListingUsecaseMock()
+        let fetchMovieListingUsecaseMock = FetchMovieListingUsecaseMock(result: true)
        let listingViewModel = ListingViewModel(fetchMovieListingUsecase: fetchMovieListingUsecaseMock)
         
         // When
@@ -29,6 +29,21 @@ final class ListingViewModelTests: XCTestCase {
             
             // Then
             XCTAssertNotNil(result)
+        }
+    }
+    
+    
+    func testFetchMovieListingFailure() throws {
+       
+       // Given
+        let fetchMovieListingUsecaseMock = FetchMovieListingUsecaseMock(result: false)
+       let listingViewModel = ListingViewModel(fetchMovieListingUsecase: fetchMovieListingUsecaseMock)
+        
+        // When
+        listingViewModel.fetchMovieListing{ result in
+            
+            // Then
+            XCTAssertNil(result)
         }
     }
 

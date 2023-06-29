@@ -18,11 +18,11 @@ final class LoginViewModelTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    // MARK: - testSignIn
-    func testSignIn() throws {
+    // MARK: - testSignInSuccess
+    func testSignInSuccess() throws {
         
         // Given
-        let loginViewModel = LoginViewModel(loginUsecase: MockLoginUsecase(), emailValidationUsecase: EmailValidationUsecase())
+        let loginViewModel = LoginViewModel(loginUsecase: MockLoginUsecase(result: true), emailValidationUsecase: EmailValidationUsecase())
         
         // When
         var authDataResult: AuthDataResult?
@@ -42,9 +42,34 @@ final class LoginViewModelTests: XCTestCase {
         }
     }
     
+    
+    // MARK: - testSignInFailure
+    func testSignInFailure() throws {
+        
+        // Given
+        let loginViewModel = LoginViewModel(loginUsecase: MockLoginUsecase(result: false), emailValidationUsecase: EmailValidationUsecase())
+        
+        // When
+        var authDataResult: AuthDataResult?
+        let expectation = expectation(description: "AuthDataResult")
+        loginViewModel.signIn(email: "hello@test.com", password: "Admin@123") { (firebaseResult, error) in
+            if error != nil {
+                expectation.fulfill()
+            } else {
+                authDataResult = firebaseResult
+                expectation.fulfill()
+            }
+        }
+        
+        // Then
+        waitForExpectations(timeout: 30) { (error) in
+            XCTAssertNil(authDataResult)
+        }
+    }
+    
     // MARK: - testIsValidEmail
     func testIsValidEmail() throws {
-        let loginViewModel = LoginViewModel(loginUsecase: MockLoginUsecase(), emailValidationUsecase: EmailValidationUsecase())
+        let loginViewModel = LoginViewModel(loginUsecase: MockLoginUsecase(result: true), emailValidationUsecase: EmailValidationUsecase())
         XCTAssertTrue(loginViewModel.isValidEmail("hello@test.com"))
     }
 

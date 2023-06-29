@@ -10,15 +10,26 @@ import UIKit
 
 class FetchMovieListingUsecaseMock: FetchMovieListingProtocol {
    
-    func fetchMovieList(completion: @escaping (MovieResult) -> ()) {
+    let result: Bool
+    
+    init(result: Bool) {
+        self.result = result
+    }
+    
+    func fetchMovieList(completion: @escaping (MovieResult?) -> ()) {
         
-        do {
-            let data = MovieListResponse.response.data(using: .utf8)!
-            let result = try JSONDecoder().decode(MovieResult.self, from: data)
-            
-             completion(result) // Mock response
-         } catch {
-            print(error)
+        if result == true {
+        
+            do {
+                let data = MovieListResponse.response.data(using: .utf8)!
+                let result = try JSONDecoder().decode(MovieResult.self, from: data)
+                
+                 completion(result) // Mock response
+             } catch {
+                print(error)
+            }
+        } else {
+            completion(nil)
         }
     }
 }

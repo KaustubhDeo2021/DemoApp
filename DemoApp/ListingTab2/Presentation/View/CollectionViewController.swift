@@ -19,7 +19,11 @@ class CollectionViewController: UIViewController {
 
         collectionViewModel.fetchMovieListing(completion: {[weak self] result in
             DispatchQueue.main.async {
-                self?.dataList = result.results
+                
+                if let result = result?.results {
+                    self?.dataList = result
+                }
+                
                 self?.collectionView.reloadData()
             }
         })
