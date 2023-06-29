@@ -22,7 +22,7 @@ final class DemoTableViewTabTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    // MARK: - testLoginScreenValidEmailAlert
+    // MARK: - testTableView
     func testTableView() throws {
         // When
         let app = XCUIApplication ()
