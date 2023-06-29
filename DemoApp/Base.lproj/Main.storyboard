@@ -353,10 +353,10 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system"/>
                                 <connections>
-                                    <action selector="backButtonTapped:" destination="uLQ-h4-ZbR" eventType="touchUpInside" id="4Mm-Mf-k28"/>
+                                    <action selector="backButtonAction:" destination="uLQ-h4-ZbR" eventType="touchUpInside" id="Y3y-0d-6Xm"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4O5-CI-3Ta">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4O5-CI-3Ta">
                                 <rect key="frame" x="10" y="385" width="373" height="427"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
@@ -378,8 +378,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="0fo-CU-91a" id="gfX-UT-lvy"/>
-                        <outlet property="movieDetails" destination="4O5-CI-3Ta" id="iuw-6M-LXG"/>
+                        <outlet property="imageView" destination="0fo-CU-91a" id="Qan-0X-VdA"/>
+                        <outlet property="movieDetails" destination="4O5-CI-3Ta" id="Ls0-cE-52E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XTs-4J-Mex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -546,7 +546,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Riv-o8-qnm"/>
+        <segue reference="nSW-yf-ANO"/>
         <segue reference="Jiy-tS-8Ak"/>
     </inferredMetricsTieBreakers>
     <resources>
