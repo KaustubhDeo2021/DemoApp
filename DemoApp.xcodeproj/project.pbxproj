@@ -16,8 +16,6 @@
 		89D61CFE2A45ACB1003A638C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D61CFD2A45ACB1003A638C /* Assets.xcassets */; };
 		89D61D012A45ACB1003A638C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D61CFF2A45ACB1003A638C /* LaunchScreen.storyboard */; };
 		89D61D0C2A45ACB1003A638C /* DemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D61D0B2A45ACB1003A638C /* DemoAppTests.swift */; };
-		89D61D162A45ACB1003A638C /* DemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D61D152A45ACB1003A638C /* DemoAppUITests.swift */; };
-		89D61D182A45ACB1003A638C /* DemoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D61D172A45ACB1003A638C /* DemoAppUITestsLaunchTests.swift */; };
 		89D75C962A49C08A0085D71F /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D75C952A49C08A0085D71F /* LoginViewControllerTests.swift */; };
 		89D75C982A49C09C0085D71F /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D75C972A49C09C0085D71F /* LoginViewModelTests.swift */; };
 		89D75C9B2A49C7CD0085D71F /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 89D75C9A2A49C7CD0085D71F /* IQKeyboardManagerSwift */; };
@@ -94,8 +92,6 @@
 		89D61D072A45ACB1003A638C /* DemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D61D0B2A45ACB1003A638C /* DemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppTests.swift; sourceTree = "<group>"; };
 		89D61D112A45ACB1003A638C /* DemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89D61D152A45ACB1003A638C /* DemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppUITests.swift; sourceTree = "<group>"; };
-		89D61D172A45ACB1003A638C /* DemoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		89D75C952A49C08A0085D71F /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		89D75C972A49C09C0085D71F /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		89D75C9C2A49C9050085D71F /* EmailValidationUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidationUsecase.swift; sourceTree = "<group>"; };
@@ -443,8 +439,6 @@
 				89DB6C852A4CAA15003E457D /* DemoTableViewTabTests.swift */,
 				89DB6C872A4CB4CD003E457D /* DemoCollectionViewTests.swift */,
 				89DB6C892A4CC0FF003E457D /* DemoLogoutScreenTests.swift */,
-				89D61D152A45ACB1003A638C /* DemoAppUITests.swift */,
-				89D61D172A45ACB1003A638C /* DemoAppUITestsLaunchTests.swift */,
 			);
 			path = DemoAppUITests;
 			sourceTree = "<group>";
@@ -988,10 +982,8 @@
 			files = (
 				89DB6C822A4CA988003E457D /* DemoInitialScreenTests.swift in Sources */,
 				89DB6C8A2A4CC0FF003E457D /* DemoLogoutScreenTests.swift in Sources */,
-				89D61D162A45ACB1003A638C /* DemoAppUITests.swift in Sources */,
 				89DB6C862A4CAA15003E457D /* DemoTableViewTabTests.swift in Sources */,
 				89DB6C842A4CA9C7003E457D /* DemoLoginScreenTests.swift in Sources */,
-				89D61D182A45ACB1003A638C /* DemoAppUITestsLaunchTests.swift in Sources */,
 				89DB6C882A4CB4CD003E457D /* DemoCollectionViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
