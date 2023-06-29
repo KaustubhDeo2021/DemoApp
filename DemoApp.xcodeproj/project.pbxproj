@@ -16,7 +16,6 @@
 		89D61CFE2A45ACB1003A638C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D61CFD2A45ACB1003A638C /* Assets.xcassets */; };
 		89D61D012A45ACB1003A638C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D61CFF2A45ACB1003A638C /* LaunchScreen.storyboard */; };
 		89D61D0C2A45ACB1003A638C /* DemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D61D0B2A45ACB1003A638C /* DemoAppTests.swift */; };
-		89D75C962A49C08A0085D71F /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D75C952A49C08A0085D71F /* LoginViewControllerTests.swift */; };
 		89D75C982A49C09C0085D71F /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D75C972A49C09C0085D71F /* LoginViewModelTests.swift */; };
 		89D75C9B2A49C7CD0085D71F /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 89D75C9A2A49C7CD0085D71F /* IQKeyboardManagerSwift */; };
 		89D75C9D2A49C9050085D71F /* EmailValidationUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D75C9C2A49C9050085D71F /* EmailValidationUsecase.swift */; };
@@ -28,7 +27,6 @@
 		89DB6C862A4CAA15003E457D /* DemoTableViewTabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB6C852A4CAA15003E457D /* DemoTableViewTabTests.swift */; };
 		89DB6C882A4CB4CD003E457D /* DemoCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB6C872A4CB4CD003E457D /* DemoCollectionViewTests.swift */; };
 		89DB6C8A2A4CC0FF003E457D /* DemoLogoutScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB6C892A4CC0FF003E457D /* DemoLogoutScreenTests.swift */; };
-		89DB6C8C2A4D27B6003E457D /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB6C8B2A4D27B6003E457D /* SignUpViewControllerTests.swift */; };
 		89E574A22A48299800D1B3CF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E574A12A48299800D1B3CF /* SignUpViewController.swift */; };
 		89E574A42A4829A600D1B3CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E574A32A4829A500D1B3CF /* LoginViewController.swift */; };
 		89E574A62A4878E100D1B3CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89E574A52A4878E100D1B3CF /* GoogleService-Info.plist */; };
@@ -43,11 +41,9 @@
 		89E574F42A49606700D1B3CF /* SignUpUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E574F32A49606700D1B3CF /* SignUpUsecase.swift */; };
 		89E574F62A4962A100D1B3CF /* LoginUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E574F52A4962A100D1B3CF /* LoginUsecase.swift */; };
 		89E575062A497E2E00D1B3CF /* SignUpUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E575052A497E2E00D1B3CF /* SignUpUsecaseTests.swift */; };
-		89E5752D2A49806D00D1B3CF /* CollectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E5752C2A49806D00D1B3CF /* CollectionViewControllerTests.swift */; };
 		89E5752F2A49807E00D1B3CF /* FetchMovieListingUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E5752E2A49807E00D1B3CF /* FetchMovieListingUsecaseTests.swift */; };
 		89E575322A49834800D1B3CF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 89E575312A49834800D1B3CF /* FirebaseAuth */; };
 		89E575362A4983C100D1B3CF /* FetchMovieListingUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E575352A4983C100D1B3CF /* FetchMovieListingUsecase.swift */; };
-		89E575382A4983F000D1B3CF /* ListingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E575372A4983F000D1B3CF /* ListingViewControllerTests.swift */; };
 		89E575412A4999DE00D1B3CF /* ListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E575402A4999DE00D1B3CF /* ListingViewModel.swift */; };
 		89E575432A499A7B00D1B3CF /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E575422A499A7A00D1B3CF /* CollectionViewModel.swift */; };
 		89E575472A499AF200D1B3CF /* CollectionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E575462A499AF200D1B3CF /* CollectionViewModelTests.swift */; };
@@ -92,7 +88,6 @@
 		89D61D072A45ACB1003A638C /* DemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D61D0B2A45ACB1003A638C /* DemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppTests.swift; sourceTree = "<group>"; };
 		89D61D112A45ACB1003A638C /* DemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89D75C952A49C08A0085D71F /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		89D75C972A49C09C0085D71F /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		89D75C9C2A49C9050085D71F /* EmailValidationUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidationUsecase.swift; sourceTree = "<group>"; };
 		89D75C9E2A49CA4B0085D71F /* CommonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonComponent.swift; sourceTree = "<group>"; };
@@ -103,7 +98,6 @@
 		89DB6C852A4CAA15003E457D /* DemoTableViewTabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewTabTests.swift; sourceTree = "<group>"; };
 		89DB6C872A4CB4CD003E457D /* DemoCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCollectionViewTests.swift; sourceTree = "<group>"; };
 		89DB6C892A4CC0FF003E457D /* DemoLogoutScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoLogoutScreenTests.swift; sourceTree = "<group>"; };
-		89DB6C8B2A4D27B6003E457D /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
 		89E574A12A48299800D1B3CF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		89E574A32A4829A500D1B3CF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		89E574A52A4878E100D1B3CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -117,10 +111,8 @@
 		89E574F32A49606700D1B3CF /* SignUpUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUsecase.swift; sourceTree = "<group>"; };
 		89E574F52A4962A100D1B3CF /* LoginUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUsecase.swift; sourceTree = "<group>"; };
 		89E575052A497E2E00D1B3CF /* SignUpUsecaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUsecaseTests.swift; sourceTree = "<group>"; };
-		89E5752C2A49806D00D1B3CF /* CollectionViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewControllerTests.swift; sourceTree = "<group>"; };
 		89E5752E2A49807E00D1B3CF /* FetchMovieListingUsecaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMovieListingUsecaseTests.swift; sourceTree = "<group>"; };
 		89E575352A4983C100D1B3CF /* FetchMovieListingUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchMovieListingUsecase.swift; sourceTree = "<group>"; };
-		89E575372A4983F000D1B3CF /* ListingViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewControllerTests.swift; sourceTree = "<group>"; };
 		89E575402A4999DE00D1B3CF /* ListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewModel.swift; sourceTree = "<group>"; };
 		89E575422A499A7A00D1B3CF /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
 		89E575462A499AF200D1B3CF /* CollectionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModelTests.swift; sourceTree = "<group>"; };
@@ -609,7 +601,6 @@
 		89E575012A497DDE00D1B3CF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				89DB6C8B2A4D27B6003E457D /* SignUpViewControllerTests.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -642,7 +633,6 @@
 		89E575172A49805700D1B3CF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				89E575372A4983F000D1B3CF /* ListingViewControllerTests.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -694,7 +684,6 @@
 		89E575262A49805700D1B3CF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				89E5752C2A49806D00D1B3CF /* CollectionViewControllerTests.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -770,7 +759,6 @@
 		89E5756A2A49B79200D1B3CF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				89D75C952A49C08A0085D71F /* LoginViewControllerTests.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -955,12 +943,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89DB6C8C2A4D27B6003E457D /* SignUpViewControllerTests.swift in Sources */,
 				89E575762A49B9AC00D1B3CF /* MockSignUpUsecase.swift in Sources */,
 				89D75CA12A49CCF70085D71F /* EmailValidationUsecaseTests.swift in Sources */,
-				89E5752D2A49806D00D1B3CF /* CollectionViewControllerTests.swift in Sources */,
-				89E575382A4983F000D1B3CF /* ListingViewControllerTests.swift in Sources */,
-				89D75C962A49C08A0085D71F /* LoginViewControllerTests.swift in Sources */,
 				89E5752F2A49807E00D1B3CF /* FetchMovieListingUsecaseTests.swift in Sources */,
 				89E575552A49AD8800D1B3CF /* MockNetworkManager.swift in Sources */,
 				89E575522A49A11B00D1B3CF /* MovieListResponse.swift in Sources */,
